@@ -18,7 +18,7 @@ class FakeSerial:
         pass
 
 # debug line
-serial.Serial = FakeSerial
+# serial.Serial = FakeSerial
 
 class GrblControl:
     def __init__(self, port):
