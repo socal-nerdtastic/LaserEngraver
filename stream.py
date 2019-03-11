@@ -37,11 +37,9 @@ class GrblControl:
 
     def _run(self, filename, callback):
         self._running = True
-        try:
-            with open(filename, 'rb') as f:
+        with open(filename, 'rb') as f:
                 data = f.readlines()
-        except:
-            data = ['']*30
+
 
         # Wake up grbl
         print("Initializing grbl...")
